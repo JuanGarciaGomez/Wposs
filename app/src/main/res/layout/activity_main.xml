@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNumero1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numero 1"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNumero2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numero 2"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <Button
+                android:id="@+id/bntSumar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sumar"
+                android:text="+"
+                android:layout_weight=".1"
+                android:layout_marginHorizontal="5dp"/>
+            <Button
+                android:id="@+id/bntRestar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="restar"
+                android:text="-"
+                android:layout_weight=".1"
+                android:layout_marginHorizontal="5dp"/>
+            <Button
+                android:id="@+id/bntMultiplicar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="multiplicar"
+                android:text="x"
+                android:layout_weight=".1"
+                android:layout_marginHorizontal="5dp"/>
+            <Button
+                android:id="@+id/bntDividir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="dividir"
+                android:text="÷"
+                android:layout_weight=".1"
+                android:layout_marginHorizontal="5dp"/>
+
+        </LinearLayout>
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resultado + :"
+                android:layout_weight=".1"/>
+            <TextView
+                android:id="@+id/resultadoSuma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Resultado Suma"
+                android:layout_weight=".3"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resultado - :"
+                android:layout_weight=".1"/>
+            <TextView
+                android:id="@+id/resultadoResta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Resultado Resta"
+                android:layout_weight=".3"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resultado x :"
+                android:layout_weight=".1"/>
+            <TextView
+                android:id="@+id/resultadoMultiplicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Resultado Mu/cion"
+                android:layout_weight=".3"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resultado ÷ :"
+                android:layout_weight=".1"/>
+            <TextView
+                android:id="@+id/resultadoDivision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Resultado division"
+                android:layout_weight=".3"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCalcular"
+            android:text="Sumar Sumas"
+            android:onClick="calcular"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numero"
+            android:inputType="number"
+            android:id="@+id/etNumero"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="enviar hola"
+            android:onClick="numero"/>
+    </LinearLayout>
+
+</ScrollView>
